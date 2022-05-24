@@ -18,6 +18,14 @@ namespace ComputerShop.Data
         {
             return _context.EmployeeType.ToList();
         }
+        public static List<EmployeeStatus> GetEmployeeStatuses()
+        {
+            return _context.EmployeeStatus.ToList();
+        }
+        public static List<Gender> GetGenders()
+        {
+            return _context.Gender.ToList();
+        }
         public static List<Producer> GetProducers()
         {
             return _context.Producer.ToList();
@@ -49,6 +57,15 @@ namespace ComputerShop.Data
 
         public static void SaveEditedProduct(Product product)
         {
+            _context.SaveChanges();
+        }
+        public static void SaveEditedEmployee(Employee employee)
+        {
+            _context.SaveChanges();
+        }
+        public static void AddNewEmployee(Employee employee)
+        {
+            _context.Employee.Add(employee);
             _context.SaveChanges();
         }
 

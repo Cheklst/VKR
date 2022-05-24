@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace ComputerShop.Data
@@ -16,7 +17,7 @@ namespace ComputerShop.Data
             {
                 if (ProductPhoto is null || ProductPhoto.Length == 0)
                 {
-                    return null;
+                    return new BitmapImage(new Uri("/Images/null_image.png", UriKind.Relative));
                 }
                 var image = new BitmapImage();
                 using (var mem = new MemoryStream(ProductPhoto))
@@ -44,7 +45,7 @@ namespace ComputerShop.Data
                 }
                 if (IdProduct % 2 == 0)
                 {
-                    return "LightGray";
+                    return "#32a8a2";
                 }
                 else
                 {

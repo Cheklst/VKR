@@ -1,11 +1,13 @@
 ﻿
 FC:\Users\79099\source\repos\ComputerShop\ComputerShop\App.xaml;;
-FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\AccountWindow.xaml;;
-FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\AddEditProductWindow.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\AccountPage.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\AddEditProductPage.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\AddNewSupplierOrProducerPage.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\AddNewTypeProductPage.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\EmployeePage.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\HistoryPage.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\ProductPage.xaml;;
 FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\Autorization.xaml;;
-FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\HistoryWindow.xaml;;
-FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\ProductOperationWindow.xaml;;
-FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\ProductWindow.xaml;;
-FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\AddNewProducerOrSupplierWindow.xaml;;
-FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\AddNewTypeProductWindow.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Windows\FrameWindow.xaml;;
+FC:\Users\79099\source\repos\ComputerShop\ComputerShop\Pages\AddEditEmployeePage.xaml;;
 

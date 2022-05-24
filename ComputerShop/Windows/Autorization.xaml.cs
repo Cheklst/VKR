@@ -30,11 +30,18 @@ namespace ComputerShop.Windows
 
             if (employee != null)
             {
-                PassClass.TypeEmployee = employee.IdEmployeeType;
-                PassClass.IdEmployee = employee.IdEmployee;
-                ProductWindow productWindow = new ProductWindow();
-                Close();
-                productWindow.Show();
+                if (employee.EmployeeStatus.Title == "Работает")
+                {
+                    PassClass.TypeEmployee = employee.IdEmployeeType;
+                    PassClass.IdEmployee = employee.IdEmployee;
+                    FrameWindow productWindow = new FrameWindow();
+                    Close();
+                    productWindow.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Пользователь заблокирован.\nОбратитесь к администратору.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                }
             }
             else
             {

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\79099\source\repos\ComputerShop\ComputerShop\App.xaml
-81251871920
+10979994926
 2-747231112
-3010188795
-182062979681
-Windows\AccountWindow.xaml;Windows\AddEditProductWindow.xaml;Windows\AddNewProducerOrSupplierWindow.xaml;Windows\AddNewTypeProductWindow.xaml;Windows\Autorization.xaml;Windows\HistoryWindow.xaml;Windows\ProductOperationWindow.xaml;Windows\ProductWindow.xaml;
+331098758386
+20-1336280463
+Pages\AccountPage.xaml;Pages\AddEditEmployeePage.xaml;Pages\AddEditProductPage.xaml;Pages\AddNewSupplierOrProducerPage.xaml;Pages\AddNewTypeProductPage.xaml;Pages\EmployeePage.xaml;Pages\HistoryPage.xaml;Pages\ProductPage.xaml;Windows\Autorization.xaml;Windows\FrameWindow.xaml;
 
 False
 

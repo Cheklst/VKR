@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:ComputerShop"
              StartupUri="/Windows/Autorization.xaml">
     <Application.Resources>
-        <SolidColorBrush x:Key="AdditionalColor">#32a8a2</SolidColorBrush>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="AdditionalColor">#32a8a2</SolidColorBrush>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
