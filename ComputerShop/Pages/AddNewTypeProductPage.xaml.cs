@@ -46,6 +46,7 @@ namespace ComputerShop.Pages
                 {
                     ProductType productType = new ProductType();
                     productType.Title = tbNewType.Text;
+
                     DatabaseInteraction.AddNewProductType(productType);
 
                     MessageBox.Show($"Тип проодукта \"{tbNewType.Text}\" успешно добавлен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);

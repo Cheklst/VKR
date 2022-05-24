@@ -25,7 +25,7 @@ namespace ComputerShop.Windows
 
         private void btnPass_Click(object sender, RoutedEventArgs e)
         {
-            List <Employee> employees = DatabaseInteraction.GetEmployees();
+            List<Employee> employees = DatabaseInteraction.GetEmployees();
             var employee = employees.Where(w => w.Login == tbLogin.Text && w.Password == pbPassword.Password).FirstOrDefault();
 
             if (employee != null)

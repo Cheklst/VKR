@@ -20,6 +20,7 @@ namespace ComputerShop.Pages
 {
     public partial class ProductPage : Page
     {
+        Context Context = new Context();
         public ProductPage()
         {
             InitializeComponent();
@@ -45,7 +46,7 @@ namespace ComputerShop.Pages
             }
             tbZeroProduct.Visibility = Visibility.Hidden;
 
-            var FilteriedProductList = DatabaseInteraction.GetProducts();
+            var FilteriedProductList = Context.Product.ToList();
 
             if (PassClass.TypeEmployee != 3)
             {
@@ -109,14 +110,17 @@ namespace ComputerShop.Pages
 
         private void btnProductOperation_Click(object sender, RoutedEventArgs e)
         {
-            //List<Product> list = lwProduct.SelectedItems.Cast<Product>().ToList();
+            //ProductOperationClass productOperationClass = new ProductOperationClass();
+            //productOperationClass.Products = lwProduct.SelectedItems.Cast<Product>().ToList();
 
-            //foreach (var i in list)
+            //for (int i = 0; i <= productOperationClass.Products.Count; i++)
             //{
-            //    new ProductOperationWindow(i).ShowDialog();
+            //    productOperationClass.Quantities.Add(1);
             //}
 
-            //new ProductOperationWindow(lwProduct.SelectedItems.Cast<Product>().ToList()).ShowDialog();
+            //List<int> quantities = new List<int> (lwProduct.SelectedItems.Count);
+
+            NavigationService.Navigate(new ProductOperationPage(lwProduct.SelectedItems.Cast<Product>().ToList()));
         }
 
         private void lwProduct_SelectionChanged(object sender, SelectionChangedEventArgs e)

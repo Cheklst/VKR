@@ -18,9 +18,6 @@ using System.Windows.Shapes;
 
 namespace ComputerShop.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AccountPage.xaml
-    /// </summary>
     public partial class AccountPage : Page
     {
         public AccountPage()

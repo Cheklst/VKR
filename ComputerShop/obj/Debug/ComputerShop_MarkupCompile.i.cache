@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\79099\source\repos\ComputerShop\ComputerShop\App.xaml
-10979994926
+11-2092355345
 2-747231112
-34256399019
+36-996256179
 20-1336280463
-Pages\AccountPage.xaml;Pages\AddEditEmployeePage.xaml;Pages\AddEditProductPage.xaml;Pages\AddNewSupplierOrProducerPage.xaml;Pages\AddNewTypeProductPage.xaml;Pages\EmployeePage.xaml;Pages\HistoryPage.xaml;Pages\ProductPage.xaml;Windows\Autorization.xaml;Windows\FrameWindow.xaml;
+Pages\AccountPage.xaml;Pages\AddEditEmployeePage.xaml;Pages\AddEditProductPage.xaml;Pages\AddNewSupplierOrProducerPage.xaml;Pages\AddNewTypeProductPage.xaml;Pages\EmployeePage.xaml;Pages\HistoryPage.xaml;Pages\ProductOperationPage.xaml;Pages\ProductPage.xaml;Windows\Autorization.xaml;Windows\FrameWindow.xaml;
 
 True
 

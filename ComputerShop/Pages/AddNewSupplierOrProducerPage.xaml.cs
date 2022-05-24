@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace ComputerShop.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddNewSupplierOrProducerPage.xaml
-    /// </summary>
     public partial class AddNewSupplierOrProducerPage : Page
     {
         private byte role;
@@ -87,7 +84,9 @@ namespace ComputerShop.Pages
                 Phone = tbPhone.Text,
                 Email = tbEmail.Text.Trim()
             };
+
             DatabaseInteraction.AddNewSupplier(supplier);
+
             MessageBox.Show($"Новый поставщик \"{tbTitle.Text}\" успешно добавлен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
 
             NavigationService.Navigate(new AddEditProductPage());
@@ -104,6 +103,7 @@ namespace ComputerShop.Pages
                 Email = tbEmail.Text.Trim()
             };
             DatabaseInteraction.AddNewProducer(producer);
+
             MessageBox.Show($"Новый производитель \"{tbTitle.Text}\" успешно добавлен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
 
             NavigationService.Navigate(new AddEditProductPage());

@@ -21,7 +21,6 @@ namespace ComputerShop.Pages
 {
     public partial class AddEditProductPage : Page
     {
-
         private Product _Product { get; set; }
 
         private BitmapImage ChangedPhoto = null;
@@ -140,9 +139,9 @@ namespace ComputerShop.Pages
 
         private void AddProduct()
         {
-            Product NewMaterial = FillProduct(new Product());
+            Product product = FillProduct(new Product());
 
-            DatabaseInteraction.AddNewProduct(NewMaterial);
+            DatabaseInteraction.AddNewProduct(FillProduct(_Product));
 
             MessageBox.Show("Материал успешно добавлен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
 
@@ -152,7 +151,7 @@ namespace ComputerShop.Pages
         private Product FillProduct(Product product)
         {
             List<ProductType> productType = DatabaseInteraction.GetProductTypes();
-            List<Producer> producers = DatabaseInteraction.GetProducers(); 
+            List<Producer> producers = DatabaseInteraction.GetProducers();
             List<Supplier> suppliers = DatabaseInteraction.GetSuppliers();
             product.Title = tbName.Text.Trim();
             product.Price = Convert.ToDecimal(tbPrice.Text);

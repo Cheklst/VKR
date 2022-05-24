@@ -35,11 +35,6 @@ namespace ComputerShop.Data
             return _context.Supplier.ToList();
         }
 
-        public static Product GetProductById(int id)
-        {
-            return _context?.Product.SingleOrDefault(i => i.IdProduct == id);
-        }
-
         public static List<Product> GetProducts()
         {
             return _context.Product.ToList();
@@ -72,6 +67,12 @@ namespace ComputerShop.Data
         public static void AddNewProduct(Product product)
         {
             _context.Product.Add(product);
+            _context.SaveChanges();
+        }
+
+        public static void AddNewHistory(History history)
+        {
+            _context.History.Add(history);
             _context.SaveChanges();
         }
 

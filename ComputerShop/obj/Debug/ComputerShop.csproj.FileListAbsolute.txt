@@ -45,3 +45,5 @@ C:\Users\79099\source\repos\ComputerShop\ComputerShop\obj\Debug\Pages\EmployeePa
 C:\Users\79099\source\repos\ComputerShop\ComputerShop\obj\Debug\Pages\EmployeePage.baml
 C:\Users\79099\source\repos\ComputerShop\ComputerShop\obj\Debug\Pages\AddEditEmployeePage.g.cs
 C:\Users\79099\source\repos\ComputerShop\ComputerShop\obj\Debug\Pages\AddEditEmployeePage.baml
+C:\Users\79099\source\repos\ComputerShop\ComputerShop\obj\Debug\Pages\ProductOperationPage.g.cs
+C:\Users\79099\source\repos\ComputerShop\ComputerShop\obj\Debug\Pages\ProductOperationPage.baml
