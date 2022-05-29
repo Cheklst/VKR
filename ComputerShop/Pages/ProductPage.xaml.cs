@@ -48,6 +48,11 @@ namespace ComputerShop.Pages
 
             var FilteriedProductList = Context.Product.ToList();
 
+            if (PassClass.TypeEmployee == 3)
+            {
+                FilteriedProductList = DatabaseInteraction.GetProducts();
+            }
+
             if (PassClass.TypeEmployee != 3)
             {
                 FilteriedProductList = FilteriedProductList.Where(w => w.IsDeleted == false).ToList();

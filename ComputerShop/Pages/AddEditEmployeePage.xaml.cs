@@ -155,7 +155,6 @@ namespace ComputerShop.Pages
         {
             Employee newEmployee = FillEmployee(new Employee());
 
-
             DatabaseInteraction.AddNewEmployee(newEmployee);
 
             MessageBox.Show("Новый работник успешно добавлен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -210,13 +209,13 @@ namespace ComputerShop.Pages
         {
             if (_Employee.EmployeeStatus.Title == "Работает")
             {
-                _Employee.EmployeeStatus.Title = "Уволен";
+                _Employee.IdEmployeeStatus = 2;
 
                 MessageBox.Show("Работник отстранен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-                _Employee.EmployeeStatus.Title = "Работает";
+                _Employee.IdEmployeeStatus = 1;
                 
                 MessageBox.Show("Работник возвращен в штат", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
             }
