@@ -38,7 +38,10 @@ namespace ComputerShop.Pages
             CheckEmployee();
 
             tbWindowTitle.Text = "Изменение данных сотрудника";
-            btnDelete.Visibility = Visibility.Visible;
+            if (employee.IdEmployeeType != 3)
+            {
+                btnDelete.Visibility = Visibility.Visible;
+            }
             btnAddEmployee.Content = "Изменить";
 
             if (_Employee.EmployeeStatus.Title == "Уволен")
