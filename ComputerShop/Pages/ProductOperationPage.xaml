@@ -52,7 +52,7 @@
 
                         <TextBlock Grid.Column="3" Text="Количество:"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         
-                        <TextBox Grid.Column="3" Text="{Binding Quantity}" LostFocus="TextBox_LostFocus"  Tag="{Binding IdProduct}" Margin="100,0,50,0"   BorderThickness="0" VerticalAlignment="Center"/>
+                        <TextBox Grid.Column="3" Text="{Binding Quantity}" LostFocus="TextBox_LostFocus" Tag="{Binding IdProduct}" Margin="100,0,50,0"   BorderThickness="0" VerticalAlignment="Center"/>
 
                     </Grid>
                 </DataTemplate>

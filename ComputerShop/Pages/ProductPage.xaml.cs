@@ -115,16 +115,6 @@ namespace ComputerShop.Pages
 
         private void btnProductOperation_Click(object sender, RoutedEventArgs e)
         {
-            //ProductOperationClass productOperationClass = new ProductOperationClass();
-            //productOperationClass.Products = lwProduct.SelectedItems.Cast<Product>().ToList();
-
-            //for (int i = 0; i <= productOperationClass.Products.Count; i++)
-            //{
-            //    productOperationClass.Quantities.Add(1);
-            //}
-
-            //List<int> quantities = new List<int> (lwProduct.SelectedItems.Count);
-
             NavigationService.Navigate(new ProductOperationPage(lwProduct.SelectedItems.Cast<Product>().ToList()));
         }
 

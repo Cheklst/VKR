@@ -83,7 +83,7 @@ namespace ComputerShop.Pages
                     }
                     else
                     {
-                        MessageBox.Show($"На складе нет такого количества товара \"{products[i].Title}\"", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show($"На складе нет такого количества товара \"{_Products[i].Title}\"", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
                         return;
                     }
                 }
