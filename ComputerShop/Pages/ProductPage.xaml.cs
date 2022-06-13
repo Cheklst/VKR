@@ -40,7 +40,7 @@ namespace ComputerShop.Pages
 
         public void UpdateProductList()
         {
-            if (tbSearch is null || cbFiltration is null || cbSort is null || cbFiltration.SelectedItem is null || cbFiltration.SelectedItem is null)
+            if (tbSearch is null || cbFiltration is null || cbSort is null || cbFiltration.SelectedItem is null)
             {
                 return;
             }
@@ -87,7 +87,7 @@ namespace ComputerShop.Pages
 
             if (((ProductType)cbFiltration.SelectedItem).Title != "Все")
             {
-                FilteriedProductList = FilteriedProductList.Where(m => m.ProductType == ((ProductType)cbFiltration.SelectedItem)).ToList();
+                FilteriedProductList = FilteriedProductList.Where(m => m.ProductType.Title == ((ProductType)cbFiltration.SelectedItem).Title).ToList();
             }
 
             lwProduct.ItemsSource = FilteriedProductList;
